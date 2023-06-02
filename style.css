@@ -1,0 +1,171 @@
+/* Configuration font */
+@font-face {
+    font-family: "BottleDepot";
+    src: url("font/BottleDepot.ttf") format("truetype");
+  }
+  
+@font-face {
+  font-family: "Cookie";
+  src: url("font/Cookie-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CryWolf";
+    src: url("font/cry-wolf.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "ExquisiteCorpse";
+    src: url("font/Exquisite Corpse.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GhostHouse";
+    src: url("font/Ghost House.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+/* Configuration générale */
+html {
+    background-image: url('img/background_black.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: rgba(44, 44, 44, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-family: "CryWolf", sans-serif;
+    font-size: 50px;
+    color: rgb(230, 0, 0);
+    text-align: center;
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-family: "ExquisiteCorpse", sans-serif;
+    color: rgb(230, 0, 0);
+}
+
+footer {
+    display: inline;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 10px;
+}
+
+
+/* Configuration des class */
+.introduction {
+    background-color: rgba(255, 0, 0, 0.4);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 25px;
+}
+
+.criteria {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 30px;
+}
+
+.criteria label {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-right: 50px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#generer {
+    font-family: "BottleDepot", sans-serif;
+    font-size: 20px;
+    display: block; /* convertit le bouton en élément de bloc */
+    width: 80%; /* occupe toute la largeur disponible */
+    max-width: 800px; /* limite la largeur maximale du bouton */
+    margin: 0 auto; /* centre le bouton horizontalement */
+    margin-bottom: 20px;
+}
+
+.result {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    color: white;
+}
+
+#configuration {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: rgba(255, 0, 0, 0.4);
+    padding: 5px;
+}
+
+#girlName {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-family: "CryWolf", sans-serif;
+    font-size: 50px;
+    color: rgb(230, 0, 0);
+    padding: 10px;
+}
+
+#girlCard {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#killerName {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+#killerBoard {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#locationName {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+#LocationBoard {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#luck{
+    background-color: rgba(0, 0, 0, 0.5); /* Utilisez les valeurs RGBA appropriées */
+    padding: 5px;
+    font-family: "ExquisiteCorpse", sans-serif;
+    font-size: 40px;
+    color: rgb(230, 0, 0);
+    text-align: center;
+}
