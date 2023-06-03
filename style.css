@@ -52,9 +52,12 @@ h1 {
 }
 
 h2 {
+    display:grid;
+    grid-template-columns: repeat(3, 80% 10% 10%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-family: "ExquisiteCorpse", sans-serif;
+    font-size: 25px;
     color: rgb(230, 0, 0);
 }
 
@@ -71,9 +74,10 @@ footer {
 /* Configuration des class et id*/
 .introduction {
     background-color: rgba(255, 0, 0, 0.4);
-    padding: 5px;
+    font-size: 20px;
     color: white;
     text-align: center;
+    padding: 5px;
     margin-right: 50px;
     margin-bottom: 5px;
     margin-left: 50px;
@@ -94,9 +98,12 @@ footer {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
     margin-right: 50px;
     margin-left: 50px;
+}
+
+.selectSeason img{
+    max-width: 10px;
 }
 
 .criteria label {
@@ -173,6 +180,7 @@ footer {
 
 img#girlCard {
     width: 300px;
+    border-radius: 10px;
 }
 
 img#logoName {

@@ -135,13 +135,14 @@ var girlImages = {
     "Uki": "<img id='girlCard' src='img/girl/202_girl2.jpg'>",
     "Ginny": "<img id='girlCard' src='img/girl/203_girl1.jpg'>",
     "Ava": "<img id='girlCard' src='img/girl/203_girl2.jpg'>",
-    "Gretel": "<img id='girlCard' src='img/girl/000_girl.jpg'>",
-    "Red": "<img id='girlCard' src='img/girl/000_girl.jpg'>",
-    "Heather": "<img id='girlCard' src='img/girl/000_girl.jpg'>",
-    "Veronica": "<img id='girlCard' src='img/girl/000_girl.jpg'>",
+    "Gretel": "<img id='girlCard' src='img/girl/204_girl1.jpg'>",
+    "Red": "<img id='girlCard' src='img/girl/204_girl2.jpg'>",
+    "Heather": "<img id='girlCard' src='img/girl/205_girl1.jpg'>",
+    "Veronica": "<img id='girlCard' src='img/girl/205_girl2.jpg'>",
     "Patsy": "<img id='girlCard' src='img/girl/251_girl1.jpg'>",
     "Julia": "<img id='girlCard' src='img/girl/901_girl1.jpg'>",
     "Agnes": "<img id='girlCard' src='img/girl/901_girl2.jpg'>",
     "Constance": "<img id='girlCard' src='img/girl/901_girl3.jpg'>",
-    "Layla": "<img id='girlCard' src='img/girl/901_girl4.jpg'>"
+    "Layla": "<img id='girlCard' src='img/girl/901_girl4.jpg'>",
+    "Paula": "<img id='girlCard' src='img/girl/902_girl1.jpg'>"
 };

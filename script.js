@@ -16,6 +16,22 @@ function unselectAll() {
     };    
 }
 
+function selectSeason(season) {
+    var box = document.getElementsByClassName(season)[0].getElementsByTagName("input");
+
+    for (var i = 0; i < box.length; i++) {
+        box[i].checked = true;
+    };    
+}
+
+function unselectSeason(season) {
+    var box = document.getElementsByClassName(season)[0].getElementsByTagName("input");
+
+    for (var i = 0; i < box.length; i++) {
+        box[i].checked = false;
+    };    
+}
+
 function genererConfiguration() {
     var box = document.getElementsByName("box");
 
@@ -32,7 +48,8 @@ function genererConfiguration() {
         b02x05: ["Heather", "Veronica"],
         b01x06: ["Melanie"],
         b02x06: ["Patsy"],
-        b99x01: ["Julia", "Agnes", "Constance", "Layla"]
+        b99x01: ["Julia", "Agnes", "Constance", "Layla"],
+        b99x02: ["Paula"]
     };
 
     var configurationsKillers = {

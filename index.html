@@ -19,7 +19,10 @@
 
     <article class="criteria">
         <div class="season1">
-            <h2>Saison 1</h2>
+             <h2>Saison 1
+                <button class="selectSeason" onclick="selectSeason('season1')"><img src="./img/checkAll.png"></button>
+                <button class="selectSeason" onclick="unselectSeason('season1')"><img src="./img/uncheckAll.png"></button>
+            </h2>
             <label><input type="checkbox" name="box" value="b01x01">La Colo de l'Horreur</label>
             <label><input type="checkbox" name="box" value="b01x02">Le Manoir Hanté</label>
             <label><input type="checkbox" name="box" value="b01x03">Le Bosquet Sanglant</label>
@@ -28,7 +31,10 @@
         </div>
         
         <div class="season2">
-            <h2>Saison 2</h2>
+            <h2>Saison 2
+                <button class="selectSeason" onclick="selectSeason('season2')"><img src="./img/checkAll.png"></button>
+                <button class="selectSeason" onclick="unselectSeason('season2')"><img src="./img/uncheckAll.png"></button>
+            </h2>
             <label><input type="checkbox" name="box" value="b02x01">Into the Void</label>
             <label><input type="checkbox" name="box" value="b02x02">Terror at Station 2891</label>
             <label><input type="checkbox" name="box" value="b02x03">A Knock at The Door</label>
@@ -37,10 +43,14 @@
         </div>
         
         <div class="misc">
-            <h2>Divers</h2>
+            <h2>Divers
+                <button class="selectSeason" onclick="selectSeason('misc')"><img src="./img/checkAll.png"></button>
+                <button class="selectSeason" onclick="unselectSeason('misc')"><img src="./img/uncheckAll.png"></button>    
+            </h2>
             <label><input type="checkbox" name="box" value="b01x06">Terror From Above</label>
             <label><input type="checkbox" name="box" value="b02x06">Terror From the Grave</label>
             <label><input type="checkbox" name="box" value="b99x01">Box of Props</label>
+            <label><input type="checkbox" name="box" value="b99x02">Promo: Paula</label>
         </div>
     </article>
    
