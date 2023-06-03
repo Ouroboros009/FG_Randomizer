@@ -1,0 +1,16 @@
+{
+    "name": "Final Girl Randomizer",
+    "short_name": "FG Random",
+    "background_color": "black",
+    "description": "Permet de générer une configuration alétoire de partie pour le jeu de société Final Girl de Van Ryder Games",
+    "orientation": "portrait-primary",
+    "start_url": "./",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
