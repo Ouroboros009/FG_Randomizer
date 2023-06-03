@@ -105,7 +105,7 @@ button {
     display: flex;
     flex-direction: row;
 }
-@media (max-width: 768px) {
+@media screen and (max-device-width: 600px) {
     .flex-container {
         flex-direction: column;
     }
