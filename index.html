@@ -14,6 +14,9 @@
         <p>Sélectionnez les extensions que vous possédez, puis cliquez sur le bouton Générer pour obtenir une configuration aléatoire correspondante.</p>
     </article>
 
+    <button class="select" onclick="selectAll()">Sélectionner tous</button>
+    <button class="select" onclick="unselectAll()">Désélectionner tous</button>
+
     <article class="criteria">
         <div class="season1">
             <h2>Saison 1</h2>
@@ -22,7 +25,6 @@
             <label><input type="checkbox" name="box" value="b01x03">Le Bosquet Sanglant</label>
             <label><input type="checkbox" name="box" value="b01x04">Massacre à la Fête</label>
             <label><input type="checkbox" name="box" value="b01x05">Cauchemar sur Mapple Lane</label>
-            <label><input type="checkbox" name="box" value="b01x06">Terror From Above</label>
         </div>
         
         <div class="season2">
@@ -32,7 +34,13 @@
             <label><input type="checkbox" name="box" value="b02x03">A Knock at The Door</label>
             <label><input type="checkbox" name="box" value="b02x04">Once Upon a Full Moon</label>
             <label><input type="checkbox" name="box" value="b02x05">Madness in the Dark</label>
+        </div>
+        
+        <div class="misc">
+            <h2>Divers</h2>
+            <label><input type="checkbox" name="box" value="b01x06">Terror From Above</label>
             <label><input type="checkbox" name="box" value="b02x06">Terror From the Grave</label>
+            <label><input type="checkbox" name="box" value="b99x01">Box of Props</label>
         </div>
     </article>
    

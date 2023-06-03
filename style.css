@@ -68,23 +68,35 @@ footer {
 }
 
 
-/* Configuration des class */
+/* Configuration des class et id*/
 .introduction {
     background-color: rgba(255, 0, 0, 0.4);
     padding: 5px;
     color: white;
     text-align: center;
-    margin-left: 50px;
     margin-right: 50px;
-    line-height: 25px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    line-height: 15px;
+}
+
+.select {
+    font-family: "BottleDepot", sans-serif;
+    font-size: 15px;
+    display: inline;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px; /* centre le bouton horizontalement */
 }
 
 .criteria {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    margin: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .criteria label {
@@ -92,17 +104,17 @@ footer {
     display: block;
     margin: 0 auto;
     margin-right: 50px;
-    margin-bottom: 5px;
     padding-left: 5px;
 }
 
 #generer {
     font-family: "BottleDepot", sans-serif;
     font-size: 20px;
-    display: block; /* convertit le bouton en élément de bloc */
-    width: 80%; /* occupe toute la largeur disponible */
-    max-width: 800px; /* limite la largeur maximale du bouton */
-    margin: 0 auto; /* centre le bouton horizontalement */
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -125,11 +137,9 @@ footer {
     grid-column: 1;
     grid-row: 2;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
     font-family: "CryWolf", sans-serif;
     font-size: 50px;
     color: rgb(230, 0, 0);
-    padding: 10px;
 }
 
 #girlCard {
@@ -159,6 +169,22 @@ footer {
 #LocationBoard {
     grid-column: 3;
     grid-row: 3;
+}
+
+img#girlCard {
+    width: 300px;
+}
+
+img#logoName {
+    width: 250px;
+}
+
+img#logo {
+    width: 60px;
+}
+
+img#board {
+    max-height: 300px; 
 }
 
 #luck{

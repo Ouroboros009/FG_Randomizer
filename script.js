@@ -1,5 +1,21 @@
 // script.js
 
+function selectAll() {
+    var box = document.getElementsByName("box");
+
+    for (var i = 0; i < box.length; i++) {
+        box[i].checked = true;
+    };    
+}
+
+function unselectAll() {
+    var box = document.getElementsByName("box");
+
+    for (var i = 0; i < box.length; i++) {
+        box[i].checked = false;
+    };    
+}
+
 function genererConfiguration() {
     var box = document.getElementsByName("box");
 
@@ -9,13 +25,14 @@ function genererConfiguration() {
         b01x03: ["Barbara", "Adelaide"],
         b01x04: ["Asami", "Charlie"],
         b01x05: ["Nancy", "Sheila"],
-        b01x06: ["Melanie"],
-        b02x01: ["Jenette", "Ellen"],
+        b02x01: ["Ellen", "Jenette"],
         b02x02: ["Kate", "Uki"],
         b02x03: ["Ginny", "Ava"],
         b02x04: ["Gretel", "Red"],
         b02x05: ["Heather", "Veronica"],
-        b02x06: ["Patsy"]
+        b01x06: ["Melanie"],
+        b02x06: ["Patsy"],
+        b99x01: ["Julia", "Agnes", "Constance", "Layla"]
     };
 
     var configurationsKillers = {
@@ -24,12 +41,12 @@ function genererConfiguration() {
         b01x03: ["Inkanyamba"],
         b01x04: ["Gepetto"],
         b01x05: ["Dr. Peur"],
-        b01x06: ["Terror From Above"],
         b02x01: ["Evomorph"],
         b02x02: ["The Organism"],
         b02x03: ["The Intruders"],
         b02x04: ["Big Bad Wolf"],
         b02x05: ["The Ratchet Lady"],
+        b01x06: ["Terror From Above"],
         b02x06: ["Terror From the Grave"]
     };
 
@@ -52,21 +69,33 @@ function genererConfiguration() {
             listGirls = listGirls.concat(configurationsGirls[box[i].value]);
         }
     }
+    listGirls = listGirls.filter((value) => {
+        return value !== "" && value !== null && value !== undefined;
+    });
+    
     var listKillers = [];
     for (var i = 0; i < box.length; i++) {
         if (box[i].checked) {
             listKillers = listKillers.concat(configurationsKillers[box[i].value]);
         }
     }
+    listKillers = listKillers.filter((value) => {
+        return value !== "" && value !== null && value !== undefined;
+    });
+
     var listLocations = [];
     for (var i = 0; i < box.length; i++) {
         if (box[i].checked) {
             listLocations = listLocations.concat(configurationsLocations[box[i].value]);
         }
     }
+    listLocations = listLocations.filter((value) => {
+        return value !== "" && value !== null && value !== undefined;
+    });
 
     var selectedGirl = getRandomElement(listGirls);
-    
+    var girlCard = girlImages[selectedGirl];
+
     var selectedKiller = getRandomElement(listKillers);
     var killerLogoName = killerImages[selectedKiller]['logoName'];
     var killerLogo = killerImages[selectedKiller]['logo'];
@@ -83,7 +112,7 @@ function genererConfiguration() {
     document.getElementById("configuration").innerHTML = configuration;
 
     document.getElementById("girlName").innerHTML = selectedGirl;
-    document.getElementById("girlCard").innerHTML = "<img src='img/000_girl.png'>";
+    document.getElementById("girlCard").innerHTML = girlCard;
     document.getElementById("killerName").innerHTML = killerLogo + killerLogoName;
     document.getElementById("killerBoard").innerHTML = killerBoard;
     document.getElementById("locationName").innerHTML = locationLogo + locationLogoName;
