@@ -51,9 +51,9 @@ h1 {
     text-align: center;
 }
 
+
+
 h2 {
-    display:grid;
-    grid-template-columns: repeat(3, 80% 10% 10%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-family: "ExquisiteCorpse", sans-serif;
@@ -78,105 +78,113 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
-    margin-right: 50px;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    line-height: 15px;
+    margin: 5px;
 }
 
-.select {
+button {
     font-family: "BottleDepot", sans-serif;
     font-size: 15px;
     display: inline;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px; /* centre le bouton horizontalement */
+    margin: 5px;
+    flex-grow: 1;
 }
 
-.criteria {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
 }
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-device-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.column-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 5px;
+}
+.column-box > * {
+    margin:5px
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
 
 .selectSeason img{
     max-width: 10px;
 }
 
-.criteria label {
+label.criteria {
     color: white;
-    display: block;
-    margin: 0 auto;
-    margin-right: 50px;
-    padding-left: 5px;
+}
+input[type='checkbox'] {
+    margin:5px
 }
 
-#generer {
-    font-family: "BottleDepot", sans-serif;
-    font-size: 20px;
-    display: block;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 .result {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
     text-align: center;
     color: white;
 }
 
 #configuration {
-    grid-column: 1 / 4;
-    grid-row: 1;
     background-color: rgba(255, 0, 0, 0.4);
     padding: 5px;
+    margin: 5px;
+}
+
+.season-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.season-title > span:first-child {
+    flex:2;
+    margin: 5px;
+}
+.season-title > button{
+    max-width: 50px;
 }
 
 #girlName {
-    grid-column: 1;
-    grid-row: 2;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: "CryWolf", sans-serif;
     font-size: 50px;
     color: rgb(230, 0, 0);
 }
 
-#girlCard {
-    grid-column: 1;
-    grid-row: 3;
-}
 
 #killerName {
-    grid-column: 2;
-    grid-row: 2;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
 }
 
-#killerBoard {
-    grid-column: 2;
-    grid-row: 3;
-}
 
 #locationName {
-    grid-column: 3;
-    grid-row: 2;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
 }
 
-#LocationBoard {
-    grid-column: 3;
-    grid-row: 3;
+.hide {
+    display: none;
 }
+
 
 img#girlCard {
     width: 300px;

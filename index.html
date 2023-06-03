@@ -9,65 +9,81 @@
 </head>
 <body>
     <h1>Final Girl Randomizer</h1>
+    <div class="container">
     <article class= "introduction">
         <p>Bienvenue sur ce générateur de configuration de jeu aléatoire.</p>
         <p>Sélectionnez les extensions que vous possédez, puis cliquez sur le bouton Générer pour obtenir une configuration aléatoire correspondante.</p>
     </article>
 
-    <button class="select" onclick="selectAll()">Sélectionner tous</button>
-    <button class="select" onclick="unselectAll()">Désélectionner tous</button>
+    <div class="flex-container">
+        <button class="select" onclick="selectAll()">Sélectionner tous</button>
+        <button class="select" onclick="unselectAll()">Désélectionner tous</button>    
+    </div>
 
-    <article class="criteria">
-        <div class="season1">
-             <h2>Saison 1
+    <article class="flex-container">
+        <div class="season1 column-box">
+             <h2 class="season-title">
+                <span>Saison 1</span>
                 <button class="selectSeason" onclick="selectSeason('season1')"><img src="./img/checkAll.png"></button>
                 <button class="selectSeason" onclick="unselectSeason('season1')"><img src="./img/uncheckAll.png"></button>
             </h2>
-            <label><input type="checkbox" name="box" value="b01x01">La Colo de l'Horreur</label>
-            <label><input type="checkbox" name="box" value="b01x02">Le Manoir Hanté</label>
-            <label><input type="checkbox" name="box" value="b01x03">Le Bosquet Sanglant</label>
-            <label><input type="checkbox" name="box" value="b01x04">Massacre à la Fête</label>
-            <label><input type="checkbox" name="box" value="b01x05">Cauchemar sur Mapple Lane</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x01">La Colo de l'Horreur</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x02">Le Manoir Hanté</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x03">Le Bosquet Sanglant</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x04">Massacre à la Fête</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x05">Cauchemar sur Mapple Lane</label>
         </div>
         
-        <div class="season2">
-            <h2>Saison 2
+        <div class="season2 column-box">
+            <h2 class="season-title">
+                <span>Saison 2</span>
                 <button class="selectSeason" onclick="selectSeason('season2')"><img src="./img/checkAll.png"></button>
                 <button class="selectSeason" onclick="unselectSeason('season2')"><img src="./img/uncheckAll.png"></button>
             </h2>
-            <label><input type="checkbox" name="box" value="b02x01">Into the Void</label>
-            <label><input type="checkbox" name="box" value="b02x02">Terror at Station 2891</label>
-            <label><input type="checkbox" name="box" value="b02x03">A Knock at The Door</label>
-            <label><input type="checkbox" name="box" value="b02x04">Once Upon a Full Moon</label>
-            <label><input type="checkbox" name="box" value="b02x05">Madness in the Dark</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x01">Into the Void</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x02">Terror at Station 2891</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x03">A Knock at The Door</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x04">Once Upon a Full Moon</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x05">Madness in the Dark</label>
         </div>
         
-        <div class="misc">
-            <h2>Divers
+        <div class="misc  column-box">
+            <h2 class="season-title">
+                <span>Divers</span>
                 <button class="selectSeason" onclick="selectSeason('misc')"><img src="./img/checkAll.png"></button>
-                <button class="selectSeason" onclick="unselectSeason('misc')"><img src="./img/uncheckAll.png"></button>    
+                <button class="selectSeason" onclick="unselectSeason('misc')"><img src="./img/uncheckAll.png"></button>
             </h2>
-            <label><input type="checkbox" name="box" value="b01x06">Terror From Above</label>
-            <label><input type="checkbox" name="box" value="b02x06">Terror From the Grave</label>
-            <label><input type="checkbox" name="box" value="b99x01">Box of Props</label>
-            <label><input type="checkbox" name="box" value="b99x02">Promo: Paula</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x06">Terror From Above</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b02x06">Terror From the Grave</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b99x01">Box of Props</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b99x02">Promo: Paula</label>
         </div>
     </article>
    
-    <button id="generer" onclick="genererConfiguration()">Générer une configuration</button>
-
-    <div class="result">
-        <div id="configuration"></div>
-        <div id="girlName"></div>
-        <div id="girlCard"></div>
-        <div id="killerName"></div>
-        <div id="killerBoard"></div>
-        <div id="locationName"></div>
-        <div id="locationBoard"></div>
+    <div class="flex-container">
+        <button id="generer" onclick="genererConfiguration()">Générer une configuration</button>
     </div>
 
-    <div><p id="luck">Bonne Chance!</p></div>
+    <div id="result" class="result column-box hide">
+        <div id="configuration"></div>
+        <div class="flex-container">
+            <div class="column-box">
+                <div id="girlName"></div>
+                <div id="girlCard"></div>
+            </div>
+            <div class="column-box">
+                <div id="killerName"></div>
+                <div id="killerBoard"></div>
+            </div>
+            <div class="column-box">
+                <div id="locationName"></div>
+                <div id="locationBoard"></div>
+            </div>
+        </div>
+        <div><p id="luck">Bonne Chance!</p></div>
+    </div>
 
+    </div>
     <footer>
         <p>Copyright &copy;. Les images sont la propriété de Van Ryder Games.</p>
         <p>Ce site est non affilié avec Van Ryder Games.</p>
