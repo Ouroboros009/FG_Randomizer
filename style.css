@@ -74,21 +74,15 @@ footer {
 /* Configuration des class et id*/
 .introduction {
     background-color: rgba(255, 0, 0, 0.4);
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
 button {
-    font-family: "BottleDepot", sans-serif;
-    font-size: 15px;
-    display: inline;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 5px;
+    font-family: "Cookie", sans-serif;
+    font-size: 30px;
     flex-grow: 1;
 }
 
@@ -127,11 +121,14 @@ button {
 
 
 .selectSeason img{
-    max-width: 10px;
+    max-width: 20px;
+    margin-top: 10px;
 }
 
 label.criteria {
+    font-size: 20px;
     color: white;
+    margin: 2px;   
 }
 input[type='checkbox'] {
     margin:5px
@@ -159,7 +156,8 @@ input[type='checkbox'] {
     margin: 5px;
 }
 .season-title > button{
-    max-width: 50px;
+    max-width: 40px;
+    margin: 5px;
 }
 
 #girlName {
@@ -193,6 +191,7 @@ img#girlCard {
 
 img#logoName {
     width: 250px;
+    margin-left: 30px;
 }
 
 img#logo {
@@ -204,7 +203,7 @@ img#board {
 }
 
 #luck{
-    background-color: rgba(0, 0, 0, 0.5); /* Utilisez les valeurs RGBA appropriées */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-family: "ExquisiteCorpse", sans-serif;
     font-size: 40px;
