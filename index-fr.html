@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -12,40 +12,40 @@
     <title>Final Girl Randomizer</title>
 </head>
 <body>
-    <label class="lang"><img src="./img/flag-en.png" alt="English Flag" width="20" height="12"></label>
+    <label class="lang"><img src="./img/flag-fr.png" alt="French Flag" width="20" height="12"></label>
     <select id="lang" onchange="changeLanguage()">
-        <option value="">English</option>
         <option value="-fr">Français</option>
+        <option value="">English</option>
     </select>
     <h1>Final Girl Randomizer</h1>
     <div class="container">
     <article class= "introduction">
-        <p>Welcome to this Final Girl randomizer.</p>
-        <p>Select owned boxes, then click on Generate button to get a random set up for your next Final Girl play.</p>
+        <p>Bienvenue sur ce générateur pour le jeu de société Final Girl.</p>
+        <p>Sélectionnez les extensions que vous possédez, puis cliquez sur le bouton Générer pour obtenir une configuration aléatoire pour votre prochaine partie de Final Girl.</p>
     </article>
 
     <div class="flex-container">
-        <button class="select" onclick="selectAll()">Select All</button>
-        <button class="select" onclick="unselectAll()">Unselect All</button>    
+        <button class="select" onclick="selectAll()">Sélectionner tous</button>
+        <button class="select" onclick="unselectAll()">Désélectionner tous</button>    
     </div>
 
     <article class="flex-container">
         <div class="season1 column-box">
              <h2 class="season-title">
-                <span>Season 1</span>
+                <span>Saison 1</span>
                 <button class="selectSeason" onclick="selectSeason('season1')"><img src="./img/checkAll.png"></button>
                 <button class="selectSeason" onclick="unselectSeason('season1')"><img src="./img/uncheckAll.png"></button>
             </h2>
-            <label class="criteria"><input type="checkbox" name="box" value="b01x01">The Happy Trails Horror</label>
-            <label class="criteria"><input type="checkbox" name="box" value="b01x02">The Haunting of Creech Manor</label>
-            <label class="criteria"><input type="checkbox" name="box" value="b01x03">Slaughter in the Groves</label>
-            <label class="criteria"><input type="checkbox" name="box" value="b01x04">Carnage at the Carnival</label>
-            <label class="criteria"><input type="checkbox" name="box" value="b01x05">Frightmare on Maple Lane</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x01">La Colo de l'Horreur</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x02">Le Manoir Hanté</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x03">Le Bosquet Sanglant</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x04">Massacre à la Fête</label>
+            <label class="criteria"><input type="checkbox" name="box" value="b01x05">Cauchemar sur Mapple Lane</label>
         </div>
         
         <div class="season2 column-box">
             <h2 class="season-title">
-                <span>Season 2</span>
+                <span>Saison 2</span>
                 <button class="selectSeason" onclick="selectSeason('season2')"><img src="./img/checkAll.png"></button>
                 <button class="selectSeason" onclick="unselectSeason('season2')"><img src="./img/uncheckAll.png"></button>
             </h2>
@@ -58,7 +58,7 @@
         
         <div class="misc  column-box">
             <h2 class="season-title">
-                <span>Misc.</span>
+                <span>Divers</span>
                 <button class="selectSeason" onclick="selectSeason('misc')"><img src="./img/checkAll.png"></button>
                 <button class="selectSeason" onclick="unselectSeason('misc')"><img src="./img/uncheckAll.png"></button>
             </h2>
@@ -70,7 +70,7 @@
     </article>
    
     <div class="flex-container">
-        <button id="generer" onclick="genererConfiguration()">Generate</button>
+        <button id="generer" onclick="genererConfiguration()">Générer</button>
     </div>
 
     <div id="result" class="result column-box hide">
@@ -88,14 +88,14 @@
                 <div id="locationBoard"></div>
             </div>
         </div>
-        <div><p id="luck">Good Luck!</p></div>
+        <div><p id="luck">Bonne Chance!</p></div>
     </div>
 
     </div>
     <footer>
-        <p>Copyright &copy;. Images are Van Ryder Games property.</p>
-        <p>This site is non affiliated with Van Ryder Games.</p>
-        <p>Fork this project or contribute on <a href="https://github.com/Ouroboros009/FG_Randomizer">Github</a></p>
+        <p>Copyright &copy;. Les images sont la propriété de Van Ryder Games.</p>
+        <p>Ce site est non affilié avec Van Ryder Games.</p>
+        <p>Vous pouvez participer à son amélioration : <a href="https://github.com/Ouroboros009/FG_Randomizer">Github</a></p>
     </footer>
 </body>
 </html>

@@ -1,5 +1,13 @@
 // script.js
 
+function changeLanguage() {
+  var langSelect = document.getElementById("lang");
+  var selectedLang = langSelect.value;
+
+  // Redirige vers la page correspondante à la langue sélectionnée
+  window.location.href = "index" + selectedLang + ".html";
+}
+
 function selectAll() {
   var box = document.getElementsByName("box");
 
@@ -129,15 +137,6 @@ function genererConfiguration() {
   var locationLogo = locationImages[selectedLocation]["logo"];
   var locationBoard = locationImages[selectedLocation]["board"];
 
-  var configuration =
-    selectedGirl +
-    " va combattre " +
-    selectedKiller +
-    " dans " +
-    selectedLocation +
-    ".";
-
-  document.getElementById("configuration").innerHTML = configuration;
 
   document.getElementById("girlName").innerHTML = selectedGirl;
   document.getElementById("girlCard").innerHTML = girlCard;
