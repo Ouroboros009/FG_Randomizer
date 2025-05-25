@@ -58,10 +58,16 @@ function genererConfiguration() {
     b02x03: ["Ginny", "Ava"],
     b02x04: ["Gretel", "Red"],
     b02x05: ["Heather", "Veronica"],
+    b03x01: ["Tali", "Kat"],
+    b03x02: ["Kenzie", "Christie"],
+    b03x03: ["Janelle", "Octavia"],
+    b03x04: ["Mandy", "Cassie"],
+    b03x05: ["Meghan", "Ronda"],
     b01x06: ["Melanie"],
     b02x06: ["Patsy"],
+    b98x01: ["Mrs. Claus", "Cindy"],
     b99x01: ["Julia", "Agnes", "Constance", "Layla"],
-    b99x02: ["Paula"],
+    b99x02: ["Paula"]
   };
 
   var configurationsKillers = {
@@ -75,8 +81,15 @@ function genererConfiguration() {
     b02x03: ["The Intruders"],
     b02x04: ["Big Bad Wolf"],
     b02x05: ["The Ratchet Lady"],
+    b03x01: ["The Hunter"],
+    b03x02: ["Razorface"],
+    b03x03: ["Slayer"],
+    b03x04: ["The Tormentor"],
+    b03x05: ["The Eyeless"],
+    b98x01: ["Krampus the Horned Devil"],
     b01x06: ["Terror From Above"],
     b02x06: ["Terror From the Grave"],
+    b03x06: ["Terror From Destiny"]
   };
 
   var configurationsLocations = {
@@ -90,6 +103,12 @@ function genererConfiguration() {
     b02x03: ["Wingard Cottage"],
     b02x04: ["Storybook Woods"],
     b02x05: ["Wolfe Asylum"],
+    b03x01: ["Sunnydaze Mall"],
+    b03x02: ["Hellscape"],
+    b03x03: ["Falconwood"],
+    b03x04: ["Marrek Warehouse"],
+    b03x05: ["Utopia"],
+    b98x01: ["Santa's Village"]
   };
 
   var listGirls = [];
